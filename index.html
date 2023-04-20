@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tomato Time</title>
+    <!-- Feather icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class='form-controls'>
+
+        <form id='settings'>
+            <label for="minutes">Minutes:</label>
+            <input type="number" id="minutes" min="1" max="60" value="25">
+            <label for="seconds">Seconds:</label>
+            <input type="number" id="seconds" min="0" max="59" value="0">
+            <div class="update-duration">
+                <button id='update-btn' type="button" onclick="updateDuration()">Update Duration</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div id='display' style='display: inline'>
+
+        <span id='minutes-display'></span>:<span id='seconds-display'></span>
+
+    </div>
+
+    <div id='controls'>
+
+        <button onclick='startTimer()'>
+            <div class='icon-container'>
+                <i class="icon" data-feather="play-circle"></i>
+                <p>Start</p>
+            </div>
+        </button>
+
+        <button onclick='stopTimer()'>
+            <div class='icon-container'>
+                <i class="icon" data-feather="stop-circle"></i>
+                <p>Stop</p>
+            </div>
+        </button>
+
+        <button onclick='pauseTimer()'>
+            <div class='icon-container'>
+                <i class="icon" data-feather="pause-circle"></i>
+                <p>Pause</p>
+            </div>
+        </button>
+
+        <button onclick='resumeTimer()'>
+            <div class='icon-container'>
+                <i class="icon" data-feather="rotate-cw"></i>
+                <p>Resume</p>
+            </div>
+        </button>
+    </div>
+
+</body>
+
+<script src='pomodoro.js'></script>
+<script>feather.replace();</script>
+
+</html>

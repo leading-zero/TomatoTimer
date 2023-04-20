@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Digital-7;
+  src: url(/fonts/Digital-7.ttf);
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+}
+
+#display {
+  background-color: white;
+  border-radius: 5px;
+  color: #ff3b30;
+  font-family: Digital-7, sans-serif;
+  font-size: 4em;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+button {
+  all: unset;
+}
+
+body {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ff3b30;
+}
+
+.form-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+form label,
+form input,
+form button {
+  margin-right: 10px;
+}
+
+#minutes-display,
+#seconds-display {
+  font-size: 3rem;
+}
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon {
+  color: #fff;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+
+input {
+  appearance: auto;
+  color: #fff;
+  background-color: #ff3b30;
+  border: none;
+}
+
+#update-btn {
+  align-self: flex-start;
+  border-color: #fff;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.update-duration {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input[type=number] {
+/*  height: 30px;
+  line-height: 30px;
+  font-size: 16px;*/
+  padding: 0 8px;
+}
